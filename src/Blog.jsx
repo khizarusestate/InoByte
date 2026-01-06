@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 export default function Blog({activeTab}){
-    const Blogs =  [{Title:"How To Install Windows 11",img:"BlogInfo1.png"},{Title:"Web Development Full Course by Bro Code",img:"BlogInfo2.png"},{Title:"OOPS in C++ by Apna College",img:"BlogInfo3.png"},{Title:"Python Full Course by Code with Herry",img:"BlogInfo4.png"}]
+    const Blogs =  [{Title:"How To Install Windows 11",img:"BlogInfo1.png",link:"https://youtu.be/eK7n0dWx_Fs?si=pjRfp62zbFDyEfKI"},{Title:"Web Development Full Course by Bro Code",img:"BlogInfo2.png",link:"https://youtu.be/HGTJBPNC-Gw?si=AtK8082C6yS23ZM4"},{Title:"OOPS in C++ by Apna College",img:"BlogInfo3.png",link:"https://youtu.be/mlIUKyZIUUU?si=41l8AShI4GaHmuir"},{Title:"Python Full Course by Code with Herry",img:"BlogInfo4.png",link:"https://youtu.be/UrsmFxEIp5k?si=hIHtgGr2xOAKH9_4"}]
     return(
           activeTab==="Blog"&&(
                 <motion.section initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className="h-screen w-screen flex md:flex-row flex-col justify-center md:items-end md:gap-7.5 gap-12.5 md:m-0 ">
@@ -13,7 +13,7 @@ export default function Blog({activeTab}){
                      {
                        Blogs.map((items,index)=>(
                             <div key={index} className="flex justify-center items-center gap-2.5">
-                                <motion.img initial={{y:60}} animate={{y:0}} transition={{duration:0.5}} src={`./Images/${items.img}`} alt={items.Title} className="md:h-25 h-15 md:w-50 w-30 border border-purple-300 rounded-[5px] duration-100 hover:drop-shadow-[0_0_20px_rgb(255,255,255)] hover:scale-110 cursor-pointer"/>
+                                <a href={items.link}><motion.img initial={{y:60}} animate={{y:0}} transition={{duration:0.5}} src={`./Images/${items.img}`} alt={items.Title} className="md:h-25 h-15 md:w-50 w-30 border border-purple-300 rounded-[5px] duration-100 hover:drop-shadow-[0_0_20px_rgb(255,255,255)] hover:scale-110 cursor-pointer"/></a>
                                 <motion.p initial={{x:60}} animate={{x:0}} transition={{duration:0.5}} className="w-62.5 md:text-[15px] text-[10px] text-purple-300 border-b border-purple-100 text-center">{items.Title}</motion.p>
                             </div>
                         ))
