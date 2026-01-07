@@ -59,7 +59,7 @@ export default function Contact({activetab}){
                         <motion.img animate={{rotate:360}} transition={{repeat:Infinity,duration:1,ease:"linear"}} src="./Images/HalfLogo.png" className="h-25"/>
                         <p className="text-purple-300 text-[30px]">Please Wait...</p>
                     </motion.div>
-                    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}}  className={`${message===""?"hidden":"block"} h-50 w-120 absolute top-[35%] flex flex-col justify-center items-center gap-3.75 rounded-[30px] bg-purple-400 z-20`}>
+                    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}}  className={`${message===""?"hidden":"block"} h-50 w-120 absolute top-[35%] flex flex-col justify-center items-center gap-3.75 rounded-[30px] bg-purple-400 z-70`}>
                        <p className="text-purple-200 text-[30px]">{message}</p>
                        <button className="h-12.5 w-25 text-[20px] rounded-[20px] text-purple-200  bg-purple-500 duration-100 hover:scale-110 cursor-pointer" onClick={()=>setMessage("")}>OK</button>
                     </motion.div>
@@ -69,4 +69,5 @@ export default function Contact({activetab}){
     )
 
 }
+
 
