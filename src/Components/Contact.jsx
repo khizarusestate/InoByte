@@ -10,7 +10,7 @@ export default function Contact({activetab}){
         e.preventDefault();
         const data = {email,help}
         setLoading(true);
-        try{const req = await fetch("https://serverinobyte.vercel.app/api/help",{
+        try{const req = await fetch("https://inobyte-backand-production.up.railway.app/help",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(data)
@@ -69,3 +69,4 @@ export default function Contact({activetab}){
     )
 
 }
+
