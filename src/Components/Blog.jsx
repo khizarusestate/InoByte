@@ -13,7 +13,7 @@ export default function Blog({activeTab}){
                      {
                        Blogs.map((items,index)=>(
                             <div key={index} className="flex justify-center items-center gap-2.5">
-                                <motion.img initial={{y:60}} animate={{y:0}} transition={{duration:0.5}} src={`./Images/${items.img}`} alt={items.Title} className="md:h-25 h-15 md:w-[50] w-30 border border-purple-300 rounded-[5px] duration-100 hover:drop-shadow-[0_0_20px_rgb(255,255,255)] hover:scale-110 cursor-pointer"/>
+                                <motion.img initial={{y:60}} animate={{y:0}} transition={{duration:0.5}} src={`./Images/${items.img}`} alt={items.Title} className="md:h-25 h-15 md:w-50 w-30 border border-purple-300 rounded-[5px] duration-100 hover:drop-shadow-[0_0_20px_rgb(255,255,255)] hover:scale-110 cursor-pointer"/>
                                 <motion.p initial={{x:60}} animate={{x:0}} transition={{duration:0.5}} className="w-62.5 md:text-[15px] text-[10px] text-purple-300 border-b border-purple-100 text-center">{items.Title}</motion.p>
                             </div>
                         ))
@@ -27,3 +27,4 @@ export default function Blog({activeTab}){
     )
 
 }
+
