@@ -49,7 +49,7 @@ export default function Contact({activetab}){
                                   <h1  className="md:text-[20px] text-[10px] text-purple-100">{items.Title}</h1>
                                   <address className="flex justify-center items-center md:gap-2.5 gap-1.25 ">
                                       <img src={`./Images/${items.icon}.png`} alt={items.Title} className="md:h-10 h-5"/>
-                                      <a className="text-purple-100 font-bold md:text-[16px] text-[13px]" href={index===0?`tel: ${items.info}`:index===1?`mailto: ${items.Title}`:`${items.link}`}>{items.info}</a>
+                                      <a className="text-purple-100 font-bold md:text-[16px] text-[13px]" href={index===0?`tel: ${items.info}`:index===1?`mailto: ${items.info}`:`${items.link}`}>{items.info}</a>
                                  </address>
                                 </div>
                             ))
@@ -69,5 +69,6 @@ export default function Contact({activetab}){
     )
 
 }
+
 
 
