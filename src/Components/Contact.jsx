@@ -30,7 +30,7 @@ export default function Contact({activetab}){
             }
 
         }
-        catch(err){console.log("Server Error!")}
+        catch(err){setMessage("Server Error!")}
         
     }
     return(
@@ -69,6 +69,7 @@ export default function Contact({activetab}){
     )
 
 }
+
 
 
 
