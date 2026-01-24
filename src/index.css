@@ -1,0 +1,13 @@
+@import "tailwindcss";
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #7c3aed, #db2777);
+    border-radius: 9999px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+  }

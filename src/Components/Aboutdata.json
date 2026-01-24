@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Company Overview",
+    "info": "InoByte is a technology company delivering modern software solutions for businesses across multiple industries."
+  },
+  {
+    "label": "Vision",
+    "info": "To enable organizations through innovative, scalable, and secure digital solutions."
+  },
+  {
+    "label": "Mission",
+    "info": "Helping businesses grow by building reliable, high-performance software tailored to their needs."
+  },
+  {
+    "label": "Core Values",
+    "info": "Innovation, Quality, Transparency, Security, Client-Focused Development."
+  },
+  {
+    "label": "Products / Services",
+    "info": "Providing web and mobile applications, custom software development, UI/UX design, and cloud-based solutions."
+  },
+  {
+    "label": "Achievements / Milestones",
+    "info": "Successfully delivered multiple projects with a strong focus on performance, usability, and long-term maintainability."
+  }
+]
