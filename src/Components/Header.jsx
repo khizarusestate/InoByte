@@ -30,7 +30,7 @@ export default function Header(){
             </motion.nav>
         </motion.header>
             {/*..................................Android Header.............................. */}
-         <header className="md:hidden flex flex-col fixed gap-30 z-20">
+         <header className="md:hidden flex flex-col fixed gap-30 z-80">
              <article className="flex h-[10vh] w-screen items-center gap-15 bg-[rgba(255,200,255,0.1)] backdrop-blur-[20px]">
                  <motion.img initial={{x:-50}} animate={{x:0}} transition={{duration:1}} className="ml-1.25 h-7 bg-purple-300 rounded-[10px]" src="./Images/Menu.png" alt="Menu" onClick={()=>setmobNav((prev)=>(!prev))}/>
                  <motion.img initial={{x:-100}} animate={{x:0}} transition={{duration:1}} className="h-15" src="./Images/Logo.png" alt="InoByte"/>
@@ -48,4 +48,5 @@ export default function Header(){
           </header>
         </>
     )
+
 }
