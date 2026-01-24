@@ -49,8 +49,8 @@ export default function Contact(){
                         <p className="text-purple-300 text-[30px]">Please Wait...</p>
                     </motion.div>
                     <motion.div initial={{opacity:0}} animate={{opacity:1}} viewport={{once:true,amount:0.5}} transition={{duration:0.5}}  className={`${message===""?"hidden":"block"} md:h-50 md:w-120 h-35 w-80 absolute top-[35%] flex flex-col justify-center items-center gap-3.75 rounded-[30px] bg-purple-800 z-70`}>
-                       <p className="text-purple-200 text-[30px]">{message}</p>
-                       <button className="h-12.5 w-25 text-[20px] rounded-[20px] text-purple-200  bg-purple-500 duration-100 hover:scale-110 " onClick={()=>setMessage("")}>OK</button>
+                       <p className="text-purple-200 text-[18px] md:text-[30px]">{message}</p>
+                       <button className="h-12.5 w-25 text-[12px] md:text-[20px] rounded-[20px] text-purple-200  bg-purple-500 duration-100 hover:scale-110 " onClick={()=>setMessage("")}>OK</button>
                     </motion.div>
                     <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}} className={`${loading||message!==""?"block":"hidden"} h-screen w-full absolute  bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] z-60 overflow-hidden`}></motion.div>
         </motion.section>
@@ -58,6 +58,7 @@ export default function Contact(){
     )
 
 }
+
 
 
 
