@@ -49,7 +49,7 @@ export default function About(){
                 <motion.article  initial={{y:50,opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:true,amount:1}} transition={{duration:1,opacity:{duration:2}}} onViewportEnter={()=>setCounterStart(true)} className='flex md:flex-row flex-col justify-center items-center md:gap-10 gap-5'>
                         {
                        ach.map((items,index)=>(
-                           <div key={index} className='md:h-25 md:-[380px] h-15 w-75 flex justify-center items-center gap-2.5 rounded-[5px] border-2 border-purple-500'>
+                           <div key={index} className='md:h-25 md:-[450px] h-15 w-75 flex justify-center items-center gap-2.5 rounded-[5px] border-2 border-purple-500'>
                                <p className='md:text-[50px] text-[30px] text-purple-500 '>{`${index===0?CLIcounterStart:index===1?AwrdcounterStart:FrnchcounterStart}+`}</p><p className='md:text-[25px] text-[20px] text-purple-200 font-bold'>{items}</p>
                            </div>
                        ))
@@ -59,4 +59,5 @@ export default function About(){
            </main>
         </Element>
     )
+
 }
